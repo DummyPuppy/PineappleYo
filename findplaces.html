@@ -8,7 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <style>
+    <link rel="stylesheet" type="text/css" href="./findplaces.css" />
+    <!-- <style>
       html, body {
         height: 100%;
         margin: 0;
@@ -339,8 +340,9 @@
         font-size: 0.8em;
         margin-top: 0.3em;
       }
-    </style>
-    <script>
+    </style> -->
+    <script type="module" src="./findplaces.js"></script>
+    <script src = "./findplaces.js">
       'use strict';
 
       /** Hides a DOM element and optionally focuses on focusEl. */
@@ -413,7 +415,7 @@
       }
 
       /** Number of POIs to show on widget load. */
-      const ND_NUM_PLACES_INITIAL = 5;
+      const ND_NUM_PLACES_INITIAL = 8;
 
       /** Number of additional POIs to show when 'Show More' button is clicked. */
       const ND_NUM_PLACES_SHOW_MORE = 5;
