@@ -2,11 +2,25 @@
   <head>
     <title>Add Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" type="text/css" href="./addMarker.css" />
-    <script type="module" src="./addMarker.js"></script>
+    <link rel="stylesheet" type="text/css" href="pages/addMarker.css" />
+    <script type="module" src="pages/addMarker.js"></script>
   </head>
   <body>
     <h3>My Google Maps Demo</h3>
+    <div id = 'search'>
+      <div class = 'search-input'>
+        <input class = 'input-box' placeholder="Search Location">
+        <button class="place-search-button">
+          <img src="https://fonts.gstatic.com/s/i/googlematerialicons/search/v11/24px.svg" alt="search"/>
+        </button>
+      </div>
+      <div class="results">
+        <ul class="place-results-list"></ul>
+      </div>
+      <div id = 'space'>
+        <p></p>
+      </div>
+    </div>
     <!--The div element for the map -->
     <div id="map"></div>
 
@@ -17,7 +31,7 @@
       with https://www.npmjs.com/package/@googlemaps/js-api-loader.
       -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4QSu858SD6Hprv7XPQHFKKvVA_1NXXBw&callback=initMap&v=weekly"
       defer
     ></script>
   </body>
